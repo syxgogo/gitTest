@@ -9,6 +9,8 @@ public class TestGit {
 
     @GetMapping("/hello")
     public String testgit(){
-        return "ok";
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("abcdefg",1,3);
+        return stringBuffer.toString();
     }
 }
